@@ -1,0 +1,61 @@
+[
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:border_saves"
+    },
+    "ops": [
+      {
+        "source": "current_border.x",
+        "target": "x",
+        "op": "replace"
+      },
+      {
+        "source": "current_border.z",
+        "target": "z",
+        "op": "replace"
+      },
+      {
+        "source": "current_border.size",
+        "target": "size",
+        "op": "replace"
+      },
+      {
+        "source": "current_border.hiders_spawn_x",
+        "target": "hiders_spawn_x",
+        "op": "replace"
+      },
+      {
+        "source": "current_border.hiders_spawn_y",
+        "target": "hiders_spawn_y",
+        "op": "replace"
+      },
+      {
+        "source": "current_border.hiders_spawn_z",
+        "target": "hiders_spawn_z",
+        "op": "replace"
+      },
+      {
+        "source": "current_border.seekers_spawn_x",
+        "target": "seekers_spawn_x",
+        "op": "replace"
+      },
+      {
+        "source": "current_border.seekers_spawn_y",
+        "target": "seekers_spawn_y",
+        "op": "replace"
+      },
+      {
+        "source": "current_border.seekers_spawn_z",
+        "target": "seekers_spawn_z",
+        "op": "replace"
+      },
+      {
+        "source": "current_border.dimension",
+        "target": "dimension",
+        "op": "replace"
+      }
+    ]
+  }
+]

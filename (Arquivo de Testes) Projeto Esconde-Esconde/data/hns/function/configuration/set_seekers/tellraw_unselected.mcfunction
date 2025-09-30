@@ -1,0 +1,1 @@
+$tellraw @a[tag=Admin] [{"selector":"@s","color":"red","underlined":true,"click_event":{"action":"run_command","command":"/function hns:configuration/set_seekers/update_selected {uuid1:$(uuid1),uuid2:$(uuid2),uuid3:$(uuid3),uuid4:$(uuid4)}"}},{"text":" ","underlined":false},{"text":"[Selecionado]","color":"dark_red"}]

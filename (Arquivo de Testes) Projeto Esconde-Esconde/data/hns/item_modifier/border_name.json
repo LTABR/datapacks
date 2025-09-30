@@ -1,0 +1,31 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "target":"item_name",
+    "name": [
+      {
+        "text": "Barreira Salva: ",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": ".x",
+          "objective": "border_saves"
+        },
+        "italic": false
+      },
+      {
+        "text": ", ",
+        "italic": false
+      },
+      {
+        "score": {
+          "name": ".z",
+          "objective": "border_saves"
+        },
+        "italic": false
+      }
+    ]
+  }
+]

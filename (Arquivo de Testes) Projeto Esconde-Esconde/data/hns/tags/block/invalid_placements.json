@@ -1,0 +1,33 @@
+{
+  "description": "Invalid blocks to place blocks or shulkers",
+  "values": [
+    "#minecraft:stairs",
+    "minecraft:scaffolding",
+    "minecraft:vine",
+    "minecraft:glow_lichen",
+    "minecraft:tall_dry_grass",
+    "minecraft:tall_grass",
+    "minecraft:large_fern",
+    "minecraft:sugar_cane",
+    "minecraft:pale_hanging_moss",
+    "minecraft:hanging_roots",
+    "minecraft:sunflower",
+    "minecraft:lilac",
+    "minecraft:peony",
+    "minecraft:rose_bush",
+    "minecraft:pitcher_plant",
+    "minecraft:composter",
+    "minecraft:enchanting_table",
+    "minecraft:cauldron",
+    "minecraft:powder_snow",
+    "minecraft:cactus",
+    "minecraft:honey_block",
+    "minecraft:slime_block",
+    "minecraft:piston",
+    "minecraft:piston_head",
+    "minecraft:sculk_shrieker",
+    "minecraft:end_portal_frame",
+    "minecraft:cobweb",
+    "#minecraft:leaves"
+  ]
+}

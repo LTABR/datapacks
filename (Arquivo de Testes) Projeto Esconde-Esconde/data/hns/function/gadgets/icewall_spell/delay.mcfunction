@@ -1,0 +1,1 @@
+advancement revoke @a[advancements={hns:use_icewall_spell=true}] only hns:use_icewall_spell

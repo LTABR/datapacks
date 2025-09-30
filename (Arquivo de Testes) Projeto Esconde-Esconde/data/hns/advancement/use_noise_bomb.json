@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:magma_cream"],
+          "predicates": {
+            "minecraft:custom_data": "{noise_bomb:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/noise_bomb/trigger"
+  }
+}

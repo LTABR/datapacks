@@ -1,0 +1,59 @@
+{
+  "description": {
+    "text": "Repelente de Vento",
+    "bold": true
+  },
+  "supported_items": "minecraft:wooden_axe",
+  "weight": 2,
+  "max_level": 10,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:explode",
+          "radius": 7,
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:sonic_boom"
+          },
+          "large_particle": {
+            "type": "minecraft:explosion_emitter"
+          },
+          "sound": "minecraft:block.anvil.land",
+          "knockback_multiplier": {
+            "type": "minecraft:lookup",
+            "values": [
+              1,
+              1.5,
+              2
+            ],
+            "fallback": {
+              "type": "minecraft:linear",
+              "base": 1.5,
+              "per_level_above_first": 0.35
+            }
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {}
+        }
+      }
+    ]
+  }
+}

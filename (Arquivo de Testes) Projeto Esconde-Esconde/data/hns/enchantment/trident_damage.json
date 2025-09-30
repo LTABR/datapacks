@@ -1,0 +1,94 @@
+{
+  "anvil_cost": 1,
+  "description": "Trident damage",
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:set",
+          "value": 14
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "type": "minecraft:trident"
+          }
+        }
+      }
+    ],
+    "minecraft:trident_sound": [
+      {
+        "sound_id": "minecraft:block.note_block.cow_bell",
+        "range": 15
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:play_sound",
+          "sound": "minecraft:block.anvil.land",
+          "volume": 0.8,
+          "pitch": 0.01
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:play_sound",
+          "sound": "minecraft:item.trident.riptide_3",
+          "volume": 1,
+          "pitch": 1.5
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:explode",
+          "attribute_to_user": true,
+          "knockback_multiplier": 2,
+          "offset": [
+            0,
+            0.1,
+            0
+          ],
+          "radius": 5,
+          "create_fire": false,
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:explosion_emitter"
+          },
+          "large_particle": {
+            "type": "minecraft:explosion"
+          },
+          "block_particles": [
+            {
+              "weight": 1,
+              "particle": {
+                "type": "minecraft:block_crumble",
+                "block_state": "minecraft:stone"
+              }
+            }
+          ],
+          "sound": "minecraft:intentionally_empty"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 16,
+    "per_level_above_first": 10
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "minecraft:trident",
+  "weight": 10
+}

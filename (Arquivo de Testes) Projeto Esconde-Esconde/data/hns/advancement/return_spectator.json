@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "teste": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "gamemode": [
+              "spectator"
+            ],
+            "input": {
+              "forward": true,
+              "backward": true
+            }
+          },
+          "nbt": "{Tags:[\"ghost\"]}",
+          "periodic_tick": 2
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:functions/return_spectator"
+  }
+}

@@ -1,0 +1,5 @@
+execute as @e[type=block_display,tag=plate] run data merge entity @s {transformation:{translation:[-0.5,-0.1,-0.25],right_rotation:[0.0,0.0,0.0,1.0],scale:[1.0,1.2,0.5]}}
+
+execute as @e[type=item_display,tag=plate2] run data merge entity @s {transformation:{right_rotation:[0.0,0.0,0.0,1.0],left_rotation:[0.0,15.0,0.0,1.0],scale:[0.0065,0.0065,0.0065],translation:[0.0,0.1,0.0]},item:{id:"minecraft:player_head",components:{"minecraft:block_entity_data":{id:"minecraft:player_head"},"minecraft:profile":{name:"LTA_BR",id:[I;1387028835,1257718738,-2137496244,1853248173],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg0ODMwNzlkNzAyOWUzNDhlMWJjMmMwN2MzMjIyODBlMTNmM2FhMjlhM2ZhZmViZDdhNGExZmJmYzMwODczMSJ9fX0="}]}}},billboard:"center"}
+
+execute as @e[type=item_display,tag=plate3] run data merge entity @s {item:{id:"minecraft:ender_eye",count:1},transformation:{translation:[0.035,0.05,0.04],right_rotation:[0.0,1.0,0.0,0.0],left_rotation:[0.0,1.0,1.0,0.0],scale:[0.6,0.6,0.7]}}

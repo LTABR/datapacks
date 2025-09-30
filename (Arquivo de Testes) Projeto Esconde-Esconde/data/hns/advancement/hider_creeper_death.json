@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:creeper",
+          "team": "Escondedores"
+        },
+        "entity": {
+          "type": "minecraft:player",
+          "team": "Escondedores"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:functions/on_hider_creeper_death"
+  }
+}

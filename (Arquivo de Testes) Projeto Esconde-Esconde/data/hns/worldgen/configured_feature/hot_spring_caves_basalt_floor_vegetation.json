@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 49,
+          "data": {
+            "Name": "minecraft:melon"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:sea_pickle",
+            "Properties": {
+              "pickles": "1",
+              "waterlogged": "true"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

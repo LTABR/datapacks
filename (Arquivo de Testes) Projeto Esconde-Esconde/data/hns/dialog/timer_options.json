@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:multi_action",
+  "external_title": "Cronômetro",
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "hiding_minutes",
+      "width": 300,
+      "label": {
+        "text": "Tempo de Espera (Minutos)",
+        "color": "dark_aqua"
+      },
+      "start": 0,
+      "end": 60,
+      "step": 1,
+      "initial": 1
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "hiding_seconds",
+      "width": 300,
+      "label": {
+        "text": "Tempo de Partida (Minutos)",
+        "color": "dark_aqua"
+      },
+      "start": 5,
+      "end": 60,
+      "step": 5,
+      "initial": 45
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "total_time",
+      "width": 350,
+      "label": {
+        "text": "Tempo de Espera (Segundos)",
+        "color": "yellow"
+      },
+      "start": 1,
+      "end": 120,
+      "step": 1,
+      "initial": 10
+    }
+  ],
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "hns:admin_screen"
+    },
+    "width": 200
+  },
+  "pause": true,
+  "after_action": "close",
+  "columns": 2,
+  "title": "Cronômetro",
+  "actions": [
+    {
+      "label": {
+        "text": "[Aplicar]",
+        "color": "dark_aqua",
+        "bold": true,
+        "underlined": true
+      },
+      "action": {
+        "type": "dynamic/run_command",
+        "template": "function hns:configuration/timer/submit_dialog_time {hiding_minutes:$(hiding_minutes),hiding_seconds:$(hiding_seconds),total_time:$(total_time)}"
+      }
+    }
+  ]
+}

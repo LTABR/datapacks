@@ -1,0 +1,32 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "  Você Recebe Asas Que Usam Todas as Cargas.",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "append"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "  ",
+          "underlined": false
+        },
+        {
+          "text": "- Produz Ruído ao Equipar.",
+          "color": "red",
+          "underlined": true
+        }
+      ]
+    ],
+    "mode": "append"
+  }
+]

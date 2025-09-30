@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:shot_crossbow"
+    },
+    "break": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:crossbow"],
+          "predicates": {
+            "minecraft:custom_data": "{airstrike:1}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/airstrike/trigger"
+  },
+  "sends_telemetry_event": false
+}

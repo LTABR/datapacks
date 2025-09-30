@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "Atribuído a:",
+        "color": "dark_gray",
+        "italic": false
+      },
+      {
+        "selector": "@p[advancements={hns:victim_pearl=true}]",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

@@ -1,0 +1,1 @@
+$execute as @a[tag=!Admin] at @s if dimension $(dimension) run tp @s @e[type=text_display,tag=centro,limit=1]

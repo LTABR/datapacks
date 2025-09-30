@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:multi_action",
+  "external_title": "Bônus Por Abate",
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "timer_bonus",
+      "width": 350,
+      "label": {
+        "text": "Bônus de Tempo (Segundos)",
+        "color": "dark_aqua"
+      },
+      "start": 0,
+      "end": 300,
+      "step": 1,
+      "initial": 0
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "score_bonus",
+      "width": 300,
+      "label": {
+        "text": "Bônus de Pontuação",
+        "color": "dark_aqua"
+      },
+      "start": 0,
+      "end": 100,
+      "step": 1,
+      "initial": 10
+    }
+  ],
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "hns:admin_screen"
+    },
+    "width": 200
+  },
+  "pause": true,
+  "after_action": "close",
+  "columns": 2,
+  "title": "Bônus Por Abate",
+  "actions": [
+    {
+      "label": {
+        "text": "[Aplicar]",
+        "color": "dark_aqua",
+        "bold": true,
+        "underlined": true
+      },
+      "action": {
+        "type": "dynamic/run_command",
+        "template": "function hns:configuration/timer/submit_dialog_time {hiding_minutes:$(hiding_minutes),hiding_seconds:$(hiding_seconds),total_time:$(total_time)}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "tazercraft:youtubers_na_escola"
+      }
+    }
+  },
+  "rewards": {
+    "function": "map_pack:tazercraft/youtubers_na_escola"
+  }
+}

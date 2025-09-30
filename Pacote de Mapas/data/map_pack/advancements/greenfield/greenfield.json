@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "greenfield:greenfield"
+      }
+    }
+  },
+  "rewards": {
+    "function": "map_pack:greenfield/greenfield"
+  }
+}

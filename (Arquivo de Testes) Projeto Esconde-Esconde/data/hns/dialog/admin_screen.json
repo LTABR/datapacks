@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Esconde-Esconde",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Lista de Configurações"
+  },
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "hns:functions_list"
+    }
+  },
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "text": "Super Wind Charge",
+        "color": "#7980c2"
+      },
+      "width": 150,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger Opcoes set 1"
+      }
+    },
+    {
+      "label": {
+        "text": "Cronômetro",
+        "color": "dark_gray"
+      },
+      "width": 150,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "hns:timer_options"
+      }
+    }
+  ]
+}

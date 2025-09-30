@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:prismarine_shard"],
+          "predicates": {
+            "minecraft:custom_data": "{icewall_spell:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/icewall_spell/cast"
+  }
+}

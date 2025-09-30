@@ -1,0 +1,404 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Esconde-Esconde",
+  "external_title": "Esconde-Esconde",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "📱 Ações"
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "spectatorMenu.close"
+    }
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "text": "[Iniciar Partida]",
+        "type": "text",
+        "color": "gray",
+        "bold": true,
+        "underlined": true
+      },
+      "tooltip": {
+        "text": "Inicia Uma Partida ",
+        "extra": [
+          {
+            "text": "Normal",
+            "type": "text",
+            "underlined": true
+          },
+          "."
+        ]
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:start {destructible_mode:0}"
+      }
+    },
+    {
+      "label": {
+        "text": "Livro de Moderador",
+        "type": "text",
+        "color": "gold",
+        "bold": true,
+        "underlined": true
+      },
+      "tooltip": {
+        "text": "Receber Livro de Moderação.",
+        "type": "text",
+        "color": "gold"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:give/admin_book"
+      }
+    },
+    {
+      "label": {
+        "text": "-",
+        "type": "text",
+        "extra": [
+          {
+            "text": "Modo Destrutível",
+            "type": "text",
+            "color": "gray",
+            "bold": true,
+            "underlined": true,
+            "obfuscated": false
+          },
+          {
+            "text": "-",
+            "type": "text",
+            "color": "white",
+            "bold": true,
+            "obfuscated": true
+          }
+        ],
+        "color": "white",
+        "bold": true,
+        "obfuscated": true
+      },
+      "tooltip": {
+        "text": "Inicia Uma Partida no ",
+        "extra": [
+          {
+            "text": "Modo de Mapa Destrutível",
+            "type": "text",
+            "color": "gray",
+            "bold": true,
+            "underlined": true
+          },
+          "."
+        ]
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:start {destructible_mode:1}"
+      }
+    },
+    {
+      "label": {
+        "text": "-",
+        "extra": [
+          {
+            "text": "Configurações",
+            "extra": [
+              {
+                "text": "-",
+                "color": "dark_gray",
+                "bold": true,
+                "obfuscated": true
+              }
+            ],
+            "color": "#0081b8",
+            "bold": true,
+            "obfuscated": false
+          }
+        ],
+        "color": "dark_gray",
+        "bold": true,
+        "obfuscated": true
+      },
+      "width": 150,
+      "action": {
+        "type": "show_dialog",
+        "dialog": "hns:admin_screen"
+      }
+    },
+    {
+      "label": {
+        "text": "Editar Lojas Normais."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:setup/shop/check_area with storage minecraft:ingame_shop placements"
+      }
+    },
+    {
+      "label": {
+        "text": "Redefinir Lojas Normais",
+        "type": "text",
+        "color": "dark_aqua",
+        "italic": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:configuration/reset_shop"
+      }
+    },
+    {
+      "label": {
+        "text": "Editar Lojas Destrutíveis"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:setup/destructible_mode_shop/check_area with storage minecraft:ingame_shop placements"
+      }
+    },
+    {
+      "label": {
+        "text": "Redefinir Lojas Destrutíveis",
+        "type": "text",
+        "color": "dark_aqua",
+        "italic": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:configuration/reset_destructible_shop"
+      }
+    },
+    {
+      "label": {
+        "text": "Restaurar Barreira",
+        "type": "text",
+        "color": "red"
+      },
+      "tooltip": {
+        "text": "Restaurar a Barreira.",
+        "type": "text",
+        "color": "red"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:setup/setup"
+      }
+    },
+    {
+      "label": {
+        "text": "Restaurar Configurações",
+        "type": "text",
+        "color": "dark_red"
+      },
+      "tooltip": {
+        "text": "Restaurar Configurações ao Padrão.",
+        "type": "text",
+        "color": "dark_red",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:configuration/reset"
+      }
+    },
+    {
+      "label": {
+        "text": "Selecionar Procuradores",
+        "type": "text",
+        "color": "yellow"
+      },
+      "tooltip": {
+        "text": "Selecionar Procuradores Manualmente.",
+        "type": "text",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:configuration/set_seekers/set_seekers_list"
+      }
+    },
+    {
+      "label": {
+        "text": "Selecionar Equipes",
+        "type": "text",
+        "color": "dark_purple"
+      },
+      "tooltip": {
+        "text": "Habilita o Modo Duplas:\n",
+        "type": "text",
+        "extra": [
+          {
+            "text": "1.",
+            "type": "text",
+            "color": "gold",
+            "underlined": true
+          },
+          {
+            "text": " As Vidas dos Escondedores Serão Compartilhadas.\n",
+            "underlined": false
+          },
+          {
+            "text": "2.",
+            "type": "text",
+            "color": "gold",
+            "underlined": true
+          },
+          {
+            "text": " Os Pontos de Vida se Multiplicarão Pela Quantidade de Integrantes na Equipe.\n",
+            "type": "text",
+            "underlined": false
+          },
+          {
+            "text": "3.",
+            "type": "text",
+            "color": "gold",
+            "underlined": true
+          },
+          {
+            "text": " Todos da Equipe Serão Eliminados se a Vida Zerar.\n",
+            "type": "text",
+            "underlined": false
+          },
+          {
+            "text": "4.",
+            "type": "text",
+            "color": "gold",
+            "underlined": true
+          },
+          {
+            "text": " Nem Todos Precisam Ser Selecionados, Pessoas Individuais Jogarão Normalmente.\n",
+            "type": "text",
+            "underlined": false
+          },
+          {
+            "text": "5.",
+            "type": "text",
+            "color": "gold",
+            "underlined": true
+          },
+          {
+            "text": " Pessoas Com Vidas Compartilhadas Vestirão Botas Como Indicação.",
+            "type": "text",
+            "underlined": false
+          }
+        ],
+        "underlined": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:configuration/set_shared_lives/set_shared_lives_list"
+      }
+    },
+    {
+      "label": {
+        "text": "Configurações Atuais",
+        "type": "text",
+        "color": "dark_gray"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:configuration/current"
+      }
+    },
+    {
+      "label": {
+        "text": "Salvar Barreira Atual",
+        "type": "text",
+        "color": "gold",
+        "underlined": true
+      },
+      "tooltip": {
+        "text": "Salvar Configurações e Barreira Atuais em Forma de Item.",
+        "type": "text",
+        "color": "gold"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:setup/barrier/item_save/create_item"
+      }
+    },
+    {
+      "label": {
+        "text": "Barreira Aleatória",
+        "type": "text",
+        "color": "light_purple",
+        "underlined": true
+      },
+      "tooltip": {
+        "text": "Gerar Uma Barreira Aleatória.\n",
+        "extra": [
+          {
+            "text": "ATENÇÃO: ",
+            "type": "text",
+            "extra": [
+              {
+                "text": "Este Processo Impacta Brevemente a Performance.",
+                "type": "text",
+                "color": "red",
+                "underlined": true
+              }
+            ],
+            "color": "dark_red"
+          }
+        ]
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:setup/barrier/random/randomize_barrier"
+      }
+    },
+    {
+      "label": {
+        "text": "Criar Backup",
+        "type": "text",
+        "color": "blue",
+        "underlined": true
+      },
+      "tooltip": {
+        "text": "Criar Backup da Estrutura do Mapa Atual.\n",
+        "type": "text",
+        "extra": [
+          {
+            "text": "ATENÇÃO: ",
+            "type": "text",
+            "color": "dark_red"
+          },
+          {
+            "text": "Este Processo Impacta Brevemente a Performance.",
+            "type": "text",
+            "color": "red",
+            "underlined": true
+          }
+        ]
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/function hns:functions/create_backup_button"
+      }
+    },
+    {
+      "label": {
+        "text": "[DESINSTALAR]",
+        "type": "text",
+        "color": "dark_red",
+        "bold": true,
+        "italic": true,
+        "underlined": true
+      },
+      "width": 100,
+      "tooltip": {
+        "text": "Desinstala o Datapack.",
+        "type": "text",
+        "color": "dark_red",
+        "bold": true
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/tellraw @s[tag=Admin] {\"text\":\"CLIQUE PARA CONFIRMAR DESINSTALAÇÃO\",\"color\":\"dark_red\",\"bold\":true,\"underlined\":true,\"hover_event\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Confirmar\\n\",\"color\":\"red\"},{\"text\":\"TODAS AS CONFIGURAÇÕES SERÃO PERDIDAS!\",\"color\":\"dark_red\",\"bold\":true,\"underlined\":true}]},\"click_event\":{\"action\":\"run_command\",\"command\":\"/function hns:setup/uninstall\"}}"
+      }
+    }
+  ]
+}

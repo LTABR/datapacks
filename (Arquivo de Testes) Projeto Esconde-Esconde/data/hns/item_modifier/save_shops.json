@@ -1,0 +1,58 @@
+[
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:loja_destrutivel_procuradores"
+    },
+    "ops": [
+      {
+        "source": "Recipes",
+        "target": "loja_destrutivel_procuradores.Recipes",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:loja_destrutivel_escondedores"
+    },
+    "ops": [
+      {
+        "source": "Recipes",
+        "target": "loja_destrutivel_escondedores.Recipes",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:loja_procuradores"
+    },
+    "ops": [
+      {
+        "source": "Recipes",
+        "target": "loja_procuradores.Recipes",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:loja_escondedores"
+    },
+    "ops": [
+      {
+        "source": "Recipes",
+        "target": "loja_escondedores.Recipes",
+        "op": "replace"
+      }
+    ]
+  }
+]

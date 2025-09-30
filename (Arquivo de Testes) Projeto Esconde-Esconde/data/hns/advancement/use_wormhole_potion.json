@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": "minecraft:dragon_breath",
+              "predicates": {
+                "minecraft:custom_data": "{wormhole_potion:1}"
+              }
+            }
+          }
+        },
+        "item": {
+          "items": "minecraft:dragon_breath",
+          "predicates": {
+            "minecraft:custom_data": "{wormhole_potion:1}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/wormhole_potion/list_players"
+  }
+}

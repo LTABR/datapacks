@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "yukkuricraft:gensokyo"
+      }
+    }
+  },
+  "rewards": {
+    "function": "map_pack:yukkuricraft/gensokyo"
+  }
+}

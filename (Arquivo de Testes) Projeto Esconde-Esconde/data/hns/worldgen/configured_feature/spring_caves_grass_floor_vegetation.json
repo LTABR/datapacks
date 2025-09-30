@@ -1,0 +1,218 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.001,
+        "feature": {
+          "feature": "minecraft:cherry_bees_005",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.001,
+        "feature": {
+          "feature": {
+            "type": "minecraft:simple_block",
+            "config": {
+              "to_place": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                  {
+                    "weight": 9,
+                    "data": {
+                      "Name": "minecraft:allium"
+                    }
+                  },
+                  {
+                    "weight": 1,
+                    "data": {
+                      "Name": "minecraft:cherry_sapling",
+                      "Properties": {
+                        "stage": "0"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "north",
+                    "flower_amount": "1"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "south",
+                    "flower_amount": "1"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "west",
+                    "flower_amount": "1"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "east",
+                    "flower_amount": "1"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "north",
+                    "flower_amount": "2"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "south",
+                    "flower_amount": "2"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "west",
+                    "flower_amount": "2"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "east",
+                    "flower_amount": "2"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "north",
+                    "flower_amount": "3"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "south",
+                    "flower_amount": "3"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "west",
+                    "flower_amount": "3"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "east",
+                    "flower_amount": "3"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "north",
+                    "flower_amount": "4"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "south",
+                    "flower_amount": "4"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "west",
+                    "flower_amount": "4"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:pink_petals",
+                  "Properties": {
+                    "facing": "east",
+                    "flower_amount": "4"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": []
+    }
+  }
+}

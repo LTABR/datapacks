@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:cake",
+          "predicates": {
+            "minecraft:custom_data": "{surprise_cake:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/surprise_cake/trigger"
+  }
+}

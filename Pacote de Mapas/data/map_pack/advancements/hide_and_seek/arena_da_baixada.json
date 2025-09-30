@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "hide_and_seek:arena_da_baixada"
+      }
+    }
+  },
+  "rewards": {
+    "function": "map_pack:hide_and_seek/arena_da_baixada"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:ominous_bottle",
+          "components": {
+            "minecraft:custom_data": "{slowness_teleporter:1}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/teleporter_drinks/slowness_teleporter"
+  }
+}

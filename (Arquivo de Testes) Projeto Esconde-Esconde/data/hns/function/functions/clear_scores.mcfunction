@@ -1,0 +1,53 @@
+scoreboard players reset @a Opcoes
+scoreboard players reset * crossbow_bait
+scoreboard players reset * Pontos
+scoreboard players reset * Abates
+scoreboard players reset * MorteVillager
+scoreboard players reset * Mortes
+scoreboard players reset * vara
+scoreboard players reset * prioridadefogos
+scoreboard players reset * prioridadehusk
+scoreboard players reset * prioridadepe
+scoreboard players reset * teleporterPlate
+scoreboard players reset * teleportersLinks
+scoreboard players reset * player_ids
+scoreboard players reset * teleporterPriority
+scoreboard players reset * teleporterPriority2
+scoreboard players reset * teleportersLinks
+scoreboard players reset * teleport_order
+scoreboard players reset * honey
+scoreboard players reset * speed_horn
+scoreboard players reset * chorus
+scoreboard players reset * bell
+scoreboard players reset * kill_increase_time
+scoreboard players reset * diamantes
+scoreboard players reset * damageTaken
+scoreboard players reset * open_trapped_chest
+scoreboard players reset * open_chest
+scoreboard players reset * open_barrel
+scoreboard players reset * open_enderchest
+scoreboard players reset * open_shulker_box
+scoreboard players reset * open_blast_furnace
+scoreboard players reset * open_brewingstand
+scoreboard players reset * open_furnace
+scoreboard players reset * open_blast_furnace
+scoreboard players reset * open_smoker
+scoreboard players reset * open_dispenser
+scoreboard players reset * open_dropper
+scoreboard players reset * open_hopper
+scoreboard players reset * seat_health
+scoreboard players reset * ride_seat
+scoreboard players reset * seat
+scoreboard players reset * interacted
+scoreboard players reset * crawling
+scoreboard players reset * thrown
+scoreboard players reset * rabbit_jump_cooldown
+scoreboard players reset .hiding Opcoes
+scoreboard players reset .seekers_too_small Opcoes
+scoreboard players reset .hiders_too_small Opcoes
+scoreboard players reset .remaining_hiders
+scoreboard players reset .remaining_team_size
+scoreboard players reset .remaining_team
+scoreboard objectives remove wormhole_potion
+
+advancement revoke @a[advancements={hns:hider_teamkill=true}] only hns:hider_teamkill

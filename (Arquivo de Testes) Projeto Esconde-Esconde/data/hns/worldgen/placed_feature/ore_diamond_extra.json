@@ -1,0 +1,27 @@
+{
+  "feature": "hns:ore_diamond_extra",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 2
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "above_bottom": -64
+        },
+        "max_inclusive": {
+          "above_bottom": 68
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

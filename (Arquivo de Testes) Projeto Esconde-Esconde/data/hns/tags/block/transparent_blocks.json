@@ -1,0 +1,27 @@
+{
+  "description": "Valid blocks to teleport to",
+  "values": [
+    "#minecraft:all_signs",
+    "#minecraft:doors",
+    "#minecraft:dragon_transparent",
+    "#minecraft:trapdoors",
+    "#minecraft:banners",
+    "#minecraft:buttons",
+    "#minecraft:candles",
+    "#minecraft:candle_cakes",
+    "#minecraft:cave_vines",
+    "#minecraft:cauldrons",
+    "#minecraft:crops",
+    "#minecraft:climbable",
+    "#minecraft:ceiling_hanging_signs",
+    "#minecraft:corals",
+    "minecraft:air",
+    "#minecraft:saplings",
+    "#minecraft:flowers",
+    "#minecraft:wall_corals",
+    "#minecraft:wall_hanging_signs",
+    "#minecraft:wool_carpets",
+    "#minecraft:flowers",
+    "minecraft:water"
+  ]
+}

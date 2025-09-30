@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:prismarine_crystals"],
+          "predicates": {
+            "minecraft:custom_data": "{clone_jump:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/clone_jump/trigger"
+  }
+}

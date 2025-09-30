@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "player": {},
+        "recipe": "hns:tracking_compass"
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/tracking_compass/cast"
+  },
+  "sends_telemetry_event": false
+}

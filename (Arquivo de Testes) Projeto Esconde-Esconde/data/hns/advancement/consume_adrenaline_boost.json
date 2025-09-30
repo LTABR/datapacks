@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "items": "minecraft:turtle_helmet",
+          "components": {
+            "minecraft:custom_data": "{adrenaline_boost:1}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/adrenaline_boost/loop"
+  }
+}

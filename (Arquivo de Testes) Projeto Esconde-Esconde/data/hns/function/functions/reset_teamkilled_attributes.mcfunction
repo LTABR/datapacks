@@ -1,0 +1,2 @@
+execute if score .shared_lives Opcoes matches 1 as @a[team=Escondedores,scores={shared_lives=1..}] unless items entity @s armor.feet minecraft:golden_boots run function hns:functions/shared_lives/set_teams
+execute if score .shared_lives Opcoes matches 1 as @a[team=Escondedores,scores={shared_lives=1..}] unless items entity @s armor.feet minecraft:golden_boots run schedule function hns:functions/reset_teamkilled_attributes 1t append

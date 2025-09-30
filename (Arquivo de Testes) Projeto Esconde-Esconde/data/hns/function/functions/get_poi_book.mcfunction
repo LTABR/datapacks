@@ -1,0 +1,1 @@
+function hide_and_seek:give_poi_book

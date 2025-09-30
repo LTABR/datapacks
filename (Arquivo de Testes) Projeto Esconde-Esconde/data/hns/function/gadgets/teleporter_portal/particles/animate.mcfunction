@@ -1,0 +1,3 @@
+execute as @e[type=minecraft:stray,sort=nearest,tag=dummy] at @s unless data entity @s interaction.player at @s positioned ~ ~1 ~ run function hns:gadgets/teleporter_portal/particles/inner_ring_particle
+execute as @e[type=minecraft:stray,sort=nearest,tag=dummy] at @s unless data entity @s interaction.player at @s positioned ~ ~1 ~ run function hns:gadgets/teleporter_portal/particles/ring_particle
+execute as @e[type=minecraft:stray,sort=nearest,tag=dummy] at @s unless data entity @s interaction.player at @s positioned ~ ~1 ~ run function hns:gadgets/teleporter_portal/particles/outer_ring_particle

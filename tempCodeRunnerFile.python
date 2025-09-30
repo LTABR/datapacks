@@ -1,0 +1,115 @@
+import os, glob
+os.chdir("./(Arquivo de Testes) Projeto Esconde-Esconde/data/minecraft/loot_tables/blocks")
+for file in glob.glob("*.json"):
+  f = open(file, 'r+')
+  f.truncate(0)
+  f.write("""
+      {
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:air",
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                      "tag": "minecraft:pickaxes"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:brown_mushroom_block",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{BlockStateTag:{down:\"false\",up:\"false\",east:\"false\",west:\"false\",north:\"false\",south:\"false\"},CanPlaceOn:[\"#hns:all_blocks\"],HideFlags:16}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                      "tag": "minecraft:pickaxes",
+                      "durability": 1
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                      "items": [
+                        "minecraft:air"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:brown_mushroom_block",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{BlockStateTag:{down:\"false\",up:\"false\",east:\"false\",west:\"false\",north:\"false\",south:\"false\"},CanPlaceOn:[\"#hns:all_blocks\"],HideFlags:16}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:survives_explosion"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:red_mushroom_block",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 32,
+                  "add": false
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{BlockStateTag:{down:\"false\",up:\"false\",east:\"false\",west:\"false\",north:\"false\",south:\"false\"},CanPlaceOn:[\"#hns:all_blocks\"],HideFlags:16}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "tag": "minecraft:pickaxes",
+                    "durability": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+""")
+  f.close()
+  print(file)

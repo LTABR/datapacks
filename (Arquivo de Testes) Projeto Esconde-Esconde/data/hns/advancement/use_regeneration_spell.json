@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:popped_chorus_fruit"],
+          "predicates": {
+            "minecraft:custom_data": "{regeneration_spell:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/regeneration_spell/cast"
+  }
+}

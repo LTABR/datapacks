@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Dimensão: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "nbt": "current_border.dimension",
+          "storage": "minecraft:border_saves",
+          "color": "green",
+          "underlined": true
+        }
+      ]
+    ],
+    "mode": "append"
+  }
+]

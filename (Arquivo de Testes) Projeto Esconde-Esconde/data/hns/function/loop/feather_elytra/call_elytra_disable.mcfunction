@@ -1,0 +1,1 @@
+execute as @a[tag=using_feather] run function hns:loop/feather_elytra/check_disable

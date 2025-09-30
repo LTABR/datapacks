@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "legs": {
+        "items": "minecraft:netherite_leggings",
+        "predicates": {
+          "minecraft:custom_data": "{no_glowing:1b}"
+        }
+      }
+    }
+  }
+}

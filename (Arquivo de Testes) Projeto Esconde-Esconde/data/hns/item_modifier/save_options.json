@@ -1,0 +1,40 @@
+[
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:options"
+    },
+    "ops": [
+      {
+        "source": "seekers",
+        "target": "seekers",
+        "op": "replace"
+      },
+      {
+        "source": "hiders",
+        "target": "hiders",
+        "op": "replace"
+      },
+      {
+        "source": "ingame",
+        "target": "ingame",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:placeholder_settings"
+    },
+    "ops": [
+      {
+        "source": "list",
+        "target": "Opcoes",
+        "op": "replace"
+      }
+    ]
+  }
+]

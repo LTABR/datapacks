@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": "minecraft:gold_ingot",
+              "predicates": {
+                "minecraft:custom_data": "{shulker_platform:1}"
+              }
+            }
+          }
+        },
+        "item": {
+          "items": "minecraft:gold_ingot",
+          "predicates": {
+            "minecraft:custom_data": "{shulker_platform:1}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/shulker_platform/use"
+  }
+}

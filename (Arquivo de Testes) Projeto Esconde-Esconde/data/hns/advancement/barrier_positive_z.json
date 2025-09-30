@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": "minecraft:ghast_tear",
+                  "predicates": {
+                    "minecraft:custom_data": "{axis:\"Z\"}"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:ghast_tear"
+          ],
+          "predicates": {
+            "minecraft:custom_data": "{axis:\"Z\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:setup/barrier/loop/move_positive_z"
+  }
+}

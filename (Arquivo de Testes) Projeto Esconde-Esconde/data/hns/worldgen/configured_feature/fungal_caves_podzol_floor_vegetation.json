@@ -1,0 +1,77 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.01,
+        "feature": {
+          "feature": "minecraft:huge_brown_mushroom",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.01,
+        "feature": {
+          "feature": "minecraft:huge_red_mushroom",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.01,
+        "feature": {
+          "feature": "minecraft:forest_rock",
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 49,
+                "data": {
+                  "Name": "minecraft:red_mushroom"
+                }
+              },
+              {
+                "weight": 49,
+                "data": {
+                  "Name": "minecraft:brown_mushroom"
+                }
+              },
+              {
+                "weight": 100,
+                "data": {
+                  "Name": "minecraft:fern"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:spruce_sapling",
+                  "Properties": {
+                    "stage": "0"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:sweet_berry_bush",
+                  "Properties": {
+                    "age": "3"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": []
+    }
+  }
+}

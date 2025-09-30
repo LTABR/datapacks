@@ -1,0 +1,1 @@
+function hns:setup/destructible_mode_shop/call_loop2 with storage minecraft:ingame_shop placements

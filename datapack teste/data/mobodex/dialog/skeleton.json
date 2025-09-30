@@ -1,0 +1,12 @@
+{
+	"type": "notice",
+	"title": "Skeleton",
+	"body": [{
+		"type": "item",
+		"item": { "id": "minecraft:skeleton_skull" },
+		"show_tooltip": false
+	},{
+		"type": "plain_message",
+		"contents": "Skeletons are master archers that can sometimes actually hit their target. They'll shoot the player on sight.\n  - Burn in daylight\n  - Can sometimes wear armor"
+	}]
+}

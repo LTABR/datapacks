@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.2,
+        "feature": {
+          "feature": "hns:coral_caves_coral_floor_bubble",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.2,
+        "feature": {
+          "feature": "hns:coral_caves_coral_floor_fire",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.2,
+        "feature": {
+          "feature": "hns:coral_caves_coral_floor_horn",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.2,
+        "feature": {
+          "feature": "hns:coral_caves_coral_floor_tube",
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": "hns:coral_caves_coral_floor_brain",
+      "placement": []
+    }
+  }
+}

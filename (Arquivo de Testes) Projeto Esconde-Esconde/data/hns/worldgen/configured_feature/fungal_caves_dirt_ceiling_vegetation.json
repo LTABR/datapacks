@@ -1,0 +1,153 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.05,
+        "feature": {
+          "feature": {
+            "type": "minecraft:simple_block",
+            "config": {
+              "to_place": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:shroomlight"
+                }
+              }
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.67,
+        "feature": {
+          "feature": {
+            "type": "minecraft:block_column",
+            "config": {
+              "direction": "down",
+              "allowed_placement": {
+                "type": "minecraft:any_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "blocks": [
+                      "minecraft:air",
+                      "minecraft:cave_air",
+                      "minecraft:water"
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      1,
+                      0
+                    ],
+                    "blocks": [
+                      "minecraft:air",
+                      "minecraft:cave_air",
+                      "minecraft:water",
+                      "minecraft:mushroom_stem"
+                    ]
+                  }
+                ]
+              },
+              "prioritize_tip": false,
+              "layers": [
+                {
+                  "height": 128,
+                  "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:mushroom_stem",
+                      "Properties": {
+                        "down": "true",
+                        "east": "true",
+                        "north": "true",
+                        "south": "true",
+                        "up": "true",
+                        "west": "true"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:block_column",
+        "config": {
+          "direction": "down",
+          "allowed_placement": {
+            "type": "minecraft:any_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:air",
+                  "minecraft:cave_air",
+                  "minecraft:water"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:air",
+                  "minecraft:cave_air",
+                  "minecraft:water",
+                  "minecraft:mushroom_stem"
+                ]
+              }
+            ]
+          },
+          "prioritize_tip": false,
+          "layers": [
+            {
+              "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 3,
+                "max_inclusive": 5
+              },
+              "provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:mushroom_stem",
+                  "Properties": {
+                    "down": "true",
+                    "east": "true",
+                    "north": "true",
+                    "south": "true",
+                    "up": "true",
+                    "west": "true"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "placement": []
+    }
+  }
+}

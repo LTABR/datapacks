@@ -1,0 +1,1 @@
+execute in hns:shop as @p[tag=at_shop] at @s at @e[type=minecraft:text_display,tag=shop_center,sort=nearest,limit=1] run fill ~24 ~12 ~10 ~24 ~12 ~12 minecraft:command_block[facing=down]{Command:"function hns:shop_dimension/conversion_menu/conversion_menu"}

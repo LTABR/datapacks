@@ -1,0 +1,11 @@
+scoreboard objectives add aleatorizador dummy
+
+give @s blaze_spawn_egg{display:{Name:'[{"text":"Colocar loot de ","italic":false},{"text":"Maçã Dourada","color":"yellow","bold":true,"italic":false,"underlined":true}]'},EntityTag:{id:"minecraft:armor_stand",Invisible:1b,Tags:["maca_dourada"]}} 1
+give @s mooshroom_spawn_egg{display:{Name:'[{"text":"Colocar loot de ","italic":false},{"text":"Recursos e Dinamite","color":"dark_red","bold":true,"italic":false,"underlined":true}]'},EntityTag:{id:"minecraft:armor_stand",Invisible:1b,Tags:["recursos_dinamite"]}} 1
+give @s allay_spawn_egg{display:{Name:'[{"text":"Colocar loot ","italic":false},{"text":"Tier Alto","color":"gold","bold":true,"underlined":true,"italic":false}]'},EntityTag:{id:"minecraft:armor_stand",Invisible:1b,Tags:["tier_alto"]}} 1
+give @s ghast_spawn_egg{display:{Name:'[{"text":"Colocar loot de ","italic":false},{"text":"Flechas","color":"gray","bold":true,"italic":false,"underlined":true}]'},EntityTag:{id:"minecraft:armor_stand",Invisible:1b,Tags:["flechas"]}} 1
+give @s piglin_spawn_egg{display:{Name:'[{"text":"Colocar loot de ","italic":false},{"text":"Besta e Comidas","color":"dark_gray","bold":true,"italic":false,"underlined":true}]'},EntityTag:{id:"minecraft:armor_stand",Invisible:1b,Tags:["besta_e_comidas"]}} 1
+give @s skeleton_spawn_egg{display:{Name:'[{"text":"Colocar loot de ","italic":false},{"text":"Recursos Básicos","color":"green","bold":true,"italic":false,"underlined":true}]'},EntityTag:{id:"minecraft:armor_stand",Invisible:1b,Tags:["recursos_basicos"]}} 1
+give @s silverfish_spawn_egg{display:{Name:'[{"text":"Colocar loot de ","italic":false},{"text":"Recursos Básicos e Ferramentas","color":"dark_green","bold":true,"italic":false,"underlined":true}]'},EntityTag:{id:"minecraft:armor_stand",Invisible:1b,Tags:["recursos_basicos_ferramentas"]}} 1
+
+give @p wither_skeleton_spawn_egg{display:{Name:'{"text":"Finalizar colocações","italic":false}'},EntityTag:{id:"minecraft:armor_stand",Invisible:1b,Tags:["finalizar"]}} 1

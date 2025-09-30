@@ -1,0 +1,29 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Estoque a cada ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": ".recargafogos",
+            "objective": "Opcoes"
+          },
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": " Segundos.",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "append"
+  }
+]

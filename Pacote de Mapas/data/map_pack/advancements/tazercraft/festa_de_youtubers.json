@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "tazercraft:festa_de_youtubers"
+      }
+    }
+  },
+  "rewards": {
+    "function": "map_pack:tazercraft/festa_de_youtubers"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:options"
+    },
+    "ops": [
+      {
+        "source": "save",
+        "target": "save",
+        "op": "replace"
+      }
+    ]
+  }
+]

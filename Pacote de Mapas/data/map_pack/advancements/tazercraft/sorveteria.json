@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "tazercraft:sorveteria"
+      }
+    }
+  },
+  "rewards": {
+    "function": "map_pack:tazercraft/sorveteria"
+  }
+}

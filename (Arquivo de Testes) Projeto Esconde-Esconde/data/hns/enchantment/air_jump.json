@@ -1,0 +1,107 @@
+{
+  "description": "Pulo Aéreo",
+  "supported_items": "minecraft:debug_stick",
+  "weight": 1,
+  "max_level": 100,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "saddle"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "air_jump": {
+                    "max": 0
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:player",
+                "type_specific": {
+                  "type": "minecraft:player",
+                  "input": {
+                    "jump": true
+                  }
+                },
+                "flags": {
+                  "is_swimming": false,
+                  "is_on_ground": false,
+                  "is_flying": false
+                },
+                "movement": {
+                  "fall_distance": {
+                    "min": 0.1
+                  }
+                },
+                "periodic_tick": 2
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:explode",
+              "knockback_multiplier": {
+                "type": "minecraft:linear",
+                "base": 1,
+                "per_level_above_first": 0.5
+              },
+              "radius": 1,
+              "create_fire": false,
+              "block_interaction": "none",
+              "small_particle": {
+                "type": "minecraft:gust"
+              },
+              "large_particle": {
+                "type": "minecraft:sweep_attack"
+              },
+              "sound": "minecraft:entity.breeze.deflect"
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "hns:gadgets/air_jump/jump"
+            }
+          ]
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_on_ground": true
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "hns:gadgets/air_jump/reset_jump"
+        }
+      }
+    ]
+  }
+}

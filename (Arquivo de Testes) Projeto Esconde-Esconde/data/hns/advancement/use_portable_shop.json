@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": "minecraft:emerald",
+              "predicates": {
+                "minecraft:custom_data": "{shop:1}"
+              }
+            }
+          }
+        },
+        "item": {
+          "items": "minecraft:emerald",
+          "predicates": {
+            "minecraft:custom_data": "{shop:1}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:functions/portable_shop/portable_shop"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "description": {
+    "text": "Adrenalina"
+  },
+  "supported_items": "minecraft:turtle_helmet",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:soul_fire_flame"
+          },
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 1
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": -0.5,
+            "scale": 0.25
+          },
+          "horizontal_velocity": {
+            "base": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 0.1,
+              "max_exclusive": 0.5
+            },
+            "movement_scale": 0
+          },
+          "vertical_velocity": {
+            "base": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 0.1,
+              "max_exclusive": 0.25
+            },
+            "movement_scale": 1
+          },
+          "speed": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 0.1,
+            "max_exclusive": 0.15
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:play_sound",
+          "sound": {
+            "sound_id": "minecraft:block.note_block.chime"
+          },
+          "volume": 1,
+          "pitch": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 0.1,
+            "max_exclusive": 0.5
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": 1
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:electric_spark"
+          },
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "offset": 0,
+            "scale": 1
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "offset": 1,
+            "scale": 0.25
+          },
+          "horizontal_velocity": {
+            "base": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 0.25,
+              "max_exclusive": 0.75
+            },
+            "movement_scale": 1.5
+          },
+          "vertical_velocity": {
+            "base": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 0.25,
+              "max_exclusive": 0.5
+            },
+            "movement_scale": 1.5
+          },
+          "speed": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 0.1,
+            "max_exclusive": 0.25
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {}
+        }
+      }
+    ]
+  }
+}

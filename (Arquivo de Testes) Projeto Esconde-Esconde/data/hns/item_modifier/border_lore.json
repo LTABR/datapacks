@@ -1,0 +1,52 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Centralizada em: ",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "score": {
+            "name": ".x",
+            "objective": "border_saves"
+          },
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": ", ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": ".z",
+            "objective": "border_saves"
+          },
+          "color": "white"
+        }
+      ],
+      [
+        {
+          "text": "Tamanho: ",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": ".size",
+            "objective": "border_saves"
+          },
+          "color": "white"
+        }
+      ]
+    ],
+    "mode": "replace_all"
+  }
+]

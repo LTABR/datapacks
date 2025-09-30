@@ -1,0 +1,21 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		"minecraft:book",
+		"minecraft:spyglass"
+	],
+	"result": {
+		"id": "minecraft:music_disc_5",
+		"components": {
+			"!jukebox_playable": {},
+			"item_name": "Mob-o-Dex",
+			"item_model": "minecraft:knowledge_book",
+			"consumable": {
+				"consume_seconds": 2147483647,
+				"animation": "toot_horn",
+				"has_consume_particles": false
+			},
+			"custom_data": "{mobodex:1b}"
+		}
+	}
+}

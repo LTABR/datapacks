@@ -1,0 +1,5 @@
+tellraw @s {"text":"-----------","color":"gold"}
+execute if score .timePerKill Opcoes matches 1.. run tellraw @s [{"text":"Tempo adicionado por abate: ","color":"white"},{"score":{"name":".timePerKill","objective":"Opcoes"},"color":"gold"},{"text":" Segundo(s).","color":"white"}]
+execute if score .timePerKill Opcoes matches 0 run tellraw @s [{"text":"Tempo adicionado por abate: ","color":"white"},{"text":"Nenhum Tempo Será Adicionado.","color":"red"}]
+tellraw @s [{"color":"gray","text":"Valor Padrão: "},{"color":"red","text":"Desativado","underlined":true},"   ",{"click_event":{"action":"run_command","command":"/function hns:configuration/per_kill/add_time_per_kill"},"color":"green","hover_event":{"action":"show_text","value":[{"text":"Aumentar","color":"green"}],"value":[{"text":"Aumentar","color":"green"}]},"text":"[+1]"},"     ",{"click_event":{"action":"run_command","command":"/function hns:configuration/per_kill/remove_time_per_kill"},"color":"red","hover_event":{"action":"show_text","value":[{"text":"Diminuir","color":"red"}],"value":[{"text":"Diminuir","color":"red"}]},"text":"[-1]"}]
+tellraw @s {"text":"-----------","color":"gold"}

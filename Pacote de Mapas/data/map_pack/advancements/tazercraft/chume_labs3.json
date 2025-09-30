@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "tazercraft:chume_labs3"
+      }
+    }
+  },
+  "rewards": {
+    "function": "map_pack:tazercraft/chume_labs3"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:player",
+              "team": "Procuradores"
+            }
+          }
+        ],
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "team": "Escondedores",
+            "equipment": {
+              "mainhand": {
+                "items": [
+                  "minecraft:firework_star"
+                ],
+                "count":1,
+                "predicates": {
+                  "minecraft:custom_data": "{seeker_pearl:1}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/seeker_pearl/on_victim_pearl"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "team": "Escondedores"
+        },
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:vex",
+            "team": "Procuradores"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/vex_detector/check"
+  }
+}

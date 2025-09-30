@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:heart_of_the_sea"],
+          "predicates": {
+            "minecraft:custom_data": "{third_eye:1}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hns:gadgets/third_eye/calculate_differences"
+  }
+}

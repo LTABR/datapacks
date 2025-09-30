@@ -1,0 +1,7 @@
+execute as @e[type=text_display,tag=start_animation,tag=glyph1] run data merge entity @s {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.35f,-3.13f,1.3f],scale:[20f,20f,1f]},start_interpolation:-1,interpolation_duration:20,Tags:["glyph1","animating"]}
+execute as @e[type=text_display,tag=start_animation,tag=glyph2] run data merge entity @s {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.35f,-3.13f,1.0f],scale:[20f,20f,1f]},start_interpolation:-1,interpolation_duration:20,Tags:["glyph2","animating"]}
+execute as @e[type=text_display,tag=start_animation,tag=glyph3] run data merge entity @s {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,0.9f],translation:[-0.25f,-3.0f,0.9f],scale:[25f,25f,1f]},start_interpolation:-1,interpolation_duration:20,Tags:["glyph3","animating"]}
+execute as @e[type=text_display,tag=start_animation,tag=glyph4] run data merge entity @s {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,0.9f],translation:[-0.35f,-4f,0.5f],scale:[32f,32f,1f]},start_interpolation:-1,interpolation_duration:20,Tags:["glyph4","animating"]}
+execute as @e[type=text_display,tag=start_animation,tag=glyph5] run data merge entity @s {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.35f,-4.5f,0.1f],scale:[30f,30f,1f]},start_interpolation:-1,interpolation_duration:20,Tags:["glyph5","animating"]}
+
+schedule function hns:gadgets/teleporter_plate/animations/glyph/hide_text_displays 1s

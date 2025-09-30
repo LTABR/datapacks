@@ -1,0 +1,67 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+      {
+          "text": "  Concede Super Pulo ao Custo de ",
+          "color": "gray",
+          "italic": false
+      },
+      {
+          "text": "1",
+          "color": "white",
+          "italic": false,
+          "underlined": true
+      },
+      {
+          "text": " Carga.",
+          "color": "gray",
+          "italic": false
+      }
+      ],
+      [
+        {
+          "text": "    Primeira Recarga: ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": ".rabbit_jump_cooldown1_seekers",
+            "objective": "Opcoes"
+          },
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": " Segundo(s)",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "text": "    Segunda Recarga: ",
+          "color": "white",
+          "italic": false
+        },
+        {
+          "score": {
+            "name": ".rabbit_jump_cooldown2_seekers",
+            "objective": "Opcoes"
+          },
+          "color": "gold",
+          "italic": false
+        },
+        {
+          "text": " Segundo(s)",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    ],
+    "mode": "replace_all"
+  }
+]
