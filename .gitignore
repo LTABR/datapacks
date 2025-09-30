@@ -1,10 +1,10 @@
-.qodo
-.github
-.vscode
-bukkit
-coop_builders
-'datapack teste'
-'gerador de loot'
-'Pacote de Mapas'
-Soccer
+.qodo/
+.github/
+.vscode/
+bukkit/
+coop_builders/
+datapack teste/
+gerador de loot/
+Pacote de Mapas/
+Soccer/
 tempCodeRunnerFile.python

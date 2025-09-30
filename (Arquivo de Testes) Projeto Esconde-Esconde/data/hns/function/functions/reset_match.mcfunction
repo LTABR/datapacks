@@ -87,6 +87,7 @@ execute as @e[type=minecraft:item_frame] run data merge entity @s {Invulnerable:
 execute as @e[type=minecraft:glow_item_frame] run data merge entity @s {Invulnerable:false}
 
 # options & scores
+execute if score .start Opcoes matches 0 run scoreboard players enable * Opcoes
 execute if score .start Opcoes matches 0 run gamerule disablePlayerMovementCheck true
 execute if score .start Opcoes matches 0 run gamerule disableElytraMovementCheck true
 execute if score .start Opcoes matches 0 run gamerule reducedDebugInfo false

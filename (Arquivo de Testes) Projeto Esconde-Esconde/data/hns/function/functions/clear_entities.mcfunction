@@ -29,6 +29,7 @@ kill @e[tag=spawner]
 kill @e[tag=arrow_minion,type=skeleton]
 kill @e[tag=alarm_trap]
 kill @e[tag=seat,type=camel]
+kill @e[tag=shulker_crawl]
 kill @e[type=minecraft:fireball,tag=motion_applied]
 execute as @e[type=minecraft:interaction,tag=cobweb_trap] at @s run fill ~ ~ ~ ~ ~ ~ air replace heavy_weighted_pressure_plate
 kill @e[type=minecraft:interaction,tag=cobweb_trap]

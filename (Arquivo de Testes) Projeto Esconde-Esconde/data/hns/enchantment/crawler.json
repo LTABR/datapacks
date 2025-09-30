@@ -1,0 +1,98 @@
+{
+  "weight": 1,
+  "max_level": 1,
+  "anvil_cost": 0,
+  "description": {
+    "text": "Rastejador"
+  },
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "weapon.*": {
+                  "items": "minecraft:bow",
+                  "components": {
+                    "minecraft:custom_data": "{super_charge:1}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "hns:functions/crawling/call_return_trigger"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:player",
+            "flags": {
+              "is_on_ground": true
+            },
+            "slots": {
+              "weapon.*": {
+                "items": "minecraft:bow",
+                "components": {
+                  "minecraft:custom_data": "{super_charge:1}"
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "hns:functions/crawling/call_update_shulker"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:player",
+            "flags": {
+              "is_sneaking": true,
+              "is_swimming": false,
+              "is_on_ground": true,
+              "is_flying": false
+            },
+            "slots": {
+              "weapon.*": {
+                "items": "minecraft:bow",
+                "components": {
+                  "minecraft:custom_data": "{super_charge:1}"
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "hns:functions/crawling/call_trigger"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/bow"
+}
