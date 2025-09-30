@@ -1,9 +1,0 @@
-{
-	"criteria": { "using_mobodex": {
-		"trigger": "minecraft:using_item",
-		"conditions": { "item": { "predicates": {
-			"minecraft:custom_data": "{mobodex:1b}"
-		}}}
-	}},
-	"rewards": { "function": "mobodex:using_mobodex" }
-}
