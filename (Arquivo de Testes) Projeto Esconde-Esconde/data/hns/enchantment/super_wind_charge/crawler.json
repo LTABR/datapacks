@@ -16,7 +16,7 @@
             "predicate": {
               "slots": {
                 "weapon.*": {
-                  "items": "minecraft:bow",
+                  "items": ["minecraft:crossbow", "bow"],
                   "components": {
                     "minecraft:custom_data": "{super_charge:1}"
                   }
@@ -41,7 +41,7 @@
             },
             "slots": {
               "weapon.*": {
-                "items": "minecraft:bow",
+                "items": ["minecraft:crossbow","bow"],
                 "components": {
                   "minecraft:custom_data": "{super_charge:1}"
                 }
@@ -68,7 +68,7 @@
             },
             "slots": {
               "weapon.*": {
-                "items": "minecraft:bow",
+                "items": ["minecraft:crossbow","bow"],
                 "components": {
                   "minecraft:custom_data": "{super_charge:1}"
                 }
@@ -94,5 +94,8 @@
   "slots": [
     "any"
   ],
-  "supported_items": "#minecraft:enchantable/bow"
+  "supported_items": [
+    "crossbow",
+    "bow"
+  ]
 }

@@ -1,0 +1,122 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.minecraft.infinity"
+  },
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:player"
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{item:{components:{\"minecraft:intangible_projectile\":{}}}}"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "hns:functions/on_arrows"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{item:{components:{\"minecraft:potion_contents\":{custom_effects:[{id:\"minecraft:dolphins_grace\"}]}}}}"
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "hns:gadgets/custom_arrows/minion_arrow"
+        }
+      }
+    ],
+    "minecraft:ammo_use": [
+      {
+        "effect": {
+          "type": "minecraft:set",
+          "value": 0
+        }
+      }
+    ],
+    "minecraft:projectile_piercing": [
+      {
+        "effect": {
+          "type": "minecraft:set",
+          "value": 100
+        }
+      }
+    ],
+    "minecraft:projectile_spawned": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{item:{components:{\"minecraft:custom_data\":{flame_arrow:true}}}}"
+          }
+        },
+        "effect": {
+          "type": "minecraft:ignite",
+          "duration": 10
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:spectral_arrow"
+          }
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "hns:gadgets/custom_arrows/spectral_arrow"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": [
+    "minecraft:bow",
+    "minecraft:crossbow"
+  ],
+  "weight": 2
+}

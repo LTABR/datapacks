@@ -1,4 +1,4 @@
-summon minecraft:text_display ^ ^ ^ {Tags:["wall_rotation"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:199999980,show_particles:0b}],NoAI:1,Silent:1}
+summon minecraft:text_display ^ ^ ^ {Tags:["wall_rotation"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:199999980,show_particles:false}],NoAI:1,Silent:false}
 execute anchored eyes run tp @e[type=minecraft:text_display,tag=wall_rotation,limit=1,sort=nearest,tag=!layer1,tag=!layer2,tag=!layer3,tag=!layer4,tag=!layer5] ^ ^0.035 ^-0.1 facing entity @s eyes
 tp @e[type=minecraft:text_display,tag=wall_rotation,limit=1,sort=nearest,tag=!layer1,tag=!layer2,tag=!layer3,tag=!layer4,tag=!layer5] ~ ~3 ~
 execute as @e[type=minecraft:text_display,tag=wall_rotation] run function hns:gadgets/icewall_spell/build_wall

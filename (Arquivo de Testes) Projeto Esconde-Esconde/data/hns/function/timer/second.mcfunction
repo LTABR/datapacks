@@ -74,9 +74,6 @@ execute if score .husks Opcoes matches 10.. run kill @e[type=husk,limit=1]
 execute as @e[type=minecraft:husk,nbt={IsBaby:1b}] run function hns:functions/on_baby_husk
 execute as @e[type=minecraft:villager,name="-Loja-"] unless data entity @s Silent run kill @s
 
-# restock seekers arrow
-item replace entity @a[team=Procuradores] inventory.8 with tipped_arrow[minecraft:potion_contents={custom_effects: [{id:"minecraft:slowness", amplifier: 3b, duration: 100, show_particles: 0b}]}] 1
-
 # fishing bait preparation
 execute as @e[type=minecraft:text_display,tag=isca] at @s unless entity @e[type=minecraft:fishing_bobber,distance=..1] run function hns:gadgets/firework_bait/summon
 

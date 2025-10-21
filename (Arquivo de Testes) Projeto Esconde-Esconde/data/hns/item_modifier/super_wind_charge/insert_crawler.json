@@ -1,0 +1,32 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+          "atlas": "minecraft:gui",
+          "sprite": "container/crafter/powered_redstone",
+          "extra": [
+            {
+              "text": " Ao se Agachar Com Este Item em Mãos, ",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "Fará o Usuário Deitar-se.",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+    "mode": "append"
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "hns:super_wind_charge/crawler": 1
+    },
+    "add": true
+  }
+]

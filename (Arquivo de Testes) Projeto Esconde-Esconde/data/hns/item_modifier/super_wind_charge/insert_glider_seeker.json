@@ -1,0 +1,72 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "hns:super_wind_charge/glider": 1
+    }
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:glider": {}
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "atlas": "minecraft:gui",
+        "sprite": "container/crafter/powered_redstone",
+        "extra": [
+          {
+            "text": " Permite Planar Como Uma Elytra",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      },
+      {
+        "text": "Por ",
+        "extra": [
+          {
+            "nbt": "seekers.impulse_duration",
+            "storage": "options",
+            "color": "white",
+            "bold": true,
+            "underlined": true
+          },
+          " Segundos"
+        ],
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "atlas": "minecraft:gui",
+        "sprite": "container/crafter/powered_redstone",
+        "extra": [
+          {
+            "text": " Quando Não Está Planando,",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      },
+      [
+        {
+          "text": "Repara ",
+          "color": "gray",
+          "bold": false,
+          "italic": false
+        },
+        {
+          "text": "1 a Cada 0,5s",
+          "color": "gray",
+          "bold": true,
+          "underlined": true
+        }
+      ]
+    ],
+    "mode": "append"
+  }
+]

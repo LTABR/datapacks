@@ -1,0 +1,102 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "text": "Tempo de Recarga"
+  },
+  "effects": {
+    "minecraft:crossbow_charge_time": {
+      "type": "minecraft:set",
+      "value": {
+        "type": "minecraft:lookup",
+        "values": [
+          0.5,
+          1,
+          1.5,
+          2,
+          2.5,
+          3,
+          3.5,
+          4,
+          4.5,
+          5,
+          5.5,
+          6,
+          6.5,
+          7,
+          7.5,
+          8,
+          8.5,
+          9,
+          9.5,
+          10,
+          10.5,
+          11,
+          11.5,
+          12,
+          12.5,
+          13,
+          13.5,
+          14,
+          14.5,
+          15,
+          15.5,
+          16,
+          16.5,
+          17,
+          17.5,
+          18,
+          18.5,
+          19,
+          19.5,
+          20,
+          20.5,
+          21,
+          21.5,
+          22,
+          22.5,
+          23,
+          23.5,
+          24,
+          24.5,
+          25,
+          25.5,
+          26,
+          26.5,
+          27,
+          27.5,
+          28,
+          28.5,
+          29,
+          29.5,
+          30
+        ],
+        "fallback": 3
+      }
+    },
+    "minecraft:crossbow_charging_sounds": [
+      {
+        "end": "minecraft:block.trial_spawner.ominous_activate",
+        "start": "minecraft:block.trial_spawner.detect_player",
+        "mid": "minecraft:block.trial_spawner.about_to_spawn_item"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 60,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "supported_items": [
+    "bow",
+    "crossbow"
+  ],
+  "weight": 1
+}

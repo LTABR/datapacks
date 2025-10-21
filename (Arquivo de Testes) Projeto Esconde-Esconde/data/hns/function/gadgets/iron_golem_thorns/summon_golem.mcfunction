@@ -1,1 +1,1 @@
-$summon iron_golem ~ ~ ~ {Tags:["golem_guard"],Health:20f,PlayerCreated:0b,AngryAt:[I;$(UUID1),$(UUID2),$(UUID3),$(UUID4)],attributes:[{id:attack_damage,base:5},{id:gravity,base:0.04},{id:max_health,base:20},{id:movement_speed,base:0.35},{id:scale,base:1.25}]}
+$summon iron_golem ~ ~ ~ {Tags:["golem_guard"],Health:20f,PlayerCreated:0b,angry_at:[I;$(UUID1),$(UUID2),$(UUID3),$(UUID4)],attributes:[{id:attack_damage,base:5},{id:gravity,base:0.04},{id:max_health,base:20},{id:movement_speed,base:0.35},{id:scale,base:1.25}]}

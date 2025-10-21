@@ -1,0 +1,46 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "hns:super_wind_charge/impulse": {
+        "type": "minecraft:storage",
+        "storage": "options",
+        "path": "seekers.impulse_strength"
+      }
+    },
+    "add": true
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "atlas": "minecraft:gui",
+        "sprite": "container/crafter/powered_redstone",
+        "extra": [
+          {
+            "text": " Ao Atirar Sob Seus Pés, te Arremessará",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      },
+      {
+        "text": "Por Aproximadamente ",
+        "extra": [
+          {
+            "nbt": "seekers.impulse_strength",
+            "storage": "options",
+            "color": "white",
+            "bold": true,
+            "underlined": true
+          },
+          " Blocos"
+        ],
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "append"
+  }
+]

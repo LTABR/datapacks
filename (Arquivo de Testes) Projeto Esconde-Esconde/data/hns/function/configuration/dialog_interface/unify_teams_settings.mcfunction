@@ -32,3 +32,17 @@ data modify storage placeholder_options players.hiders_impulse_strength set from
 data modify storage placeholder_options players.seekers_impulse_strength set from storage minecraft:options seekers.impulse_strength
 data modify storage placeholder_options players.hiders_impulse_cooldown set from storage minecraft:options hiders.impulse_cooldown
 data modify storage placeholder_options players.seekers_impulse_cooldown set from storage minecraft:options seekers.impulse_cooldown
+data modify storage placeholder_options players.hiders_impulse_reload set from storage minecraft:options hiders.impulse_reload
+data modify storage placeholder_options players.seekers_impulse_reload set from storage minecraft:options seekers.impulse_reload
+data modify storage placeholder_options players.hiders_reload_movement set from storage minecraft:options hiders.reload_movement
+data modify storage placeholder_options players.seekers_reload_movement set from storage minecraft:options seekers.reload_movement
+data modify storage placeholder_options players.hiders_reload_sprint set from storage minecraft:options hiders.reload_sprint
+data modify storage placeholder_options players.seekers_reload_sprint set from storage minecraft:options seekers.reload_sprint
+
+# estes aqui ainda estão como scoreboard
+data modify storage placeholder_options players.hiders_super_wind_charge set from storage minecraft:options hiders.super_wind_charge
+data modify storage placeholder_options players.seekers_super_wind_charge set from storage minecraft:options seekers.super_wind_charge
+data modify storage placeholder_options players.hiders_glider set from storage minecraft:options hiders.glider
+data modify storage placeholder_options players.seekers_glider set from storage minecraft:options seekers.glider
+data modify storage placeholder_options players.hiders_crawler set from storage minecraft:options hiders.crawler
+data modify storage placeholder_options players.seekers_crawler set from storage minecraft:options seekers.crawler

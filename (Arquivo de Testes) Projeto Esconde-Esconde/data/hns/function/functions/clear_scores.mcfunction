@@ -49,5 +49,3 @@ scoreboard players reset .remaining_hiders
 scoreboard players reset .remaining_team_size
 scoreboard players reset .remaining_team
 scoreboard objectives remove wormhole_potion
-
-advancement revoke @a[advancements={hns:hider_teamkill=true}] only hns:hider_teamkill

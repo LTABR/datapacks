@@ -17,11 +17,11 @@
                 "entity": "this",
                 "predicate": {
                   "flags": {
-                    "is_flying": false
+                    "is_fall_flying": false
                   },
                   "equipment": {
                     "mainhand": {
-                      "items": "bow",
+                      "items": ["bow","crossbow"],
                       "components": {
                         "minecraft:custom_data": "{super_charge:1}",
                         "minecraft:glider": {}
@@ -70,7 +70,7 @@
           "predicate": {
             "team": "Procuradores",
             "flags": {
-              "is_flying": false
+              "is_fall_flying": false
             },
             "periodic_tick": 10
           }
@@ -101,5 +101,8 @@
   "slots": [
     "any"
   ],
-  "supported_items": "#minecraft:enchantable/bow"
+  "supported_items": [
+    "bow",
+    "crossbow"
+  ]
 }

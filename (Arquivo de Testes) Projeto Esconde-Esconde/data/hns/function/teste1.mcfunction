@@ -1,3 +1,3 @@
-advancement revoke @s only hns:teste
+# advancement revoke @s only hns:teste
 
 say foi
